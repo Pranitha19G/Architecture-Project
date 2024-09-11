@@ -1,0 +1,109 @@
+/* ---------------------------------icons--------------------- */
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+} 
+/* Add a delay to each card */
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+}
+ 
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+/* ------------------------about section-------------- */
+/* --------------------6cards-------------------------- */
+.container .heading {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.container .font {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.box-container .box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+/* Keyframes for the animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply a delay for each box */
+.box-container .box:nth-child(1) { --i: 1; }
+.box-container .box:nth-child(2) { --i: 2; }
+.box-container .box:nth-child(3) { --i: 3; }
+.box-container .box:nth-child(4) { --i: 4; }
+.box-container .box:nth-child(5) { --i: 5; }
+.box-container .box:nth-child(6) { --i: 6; }
+

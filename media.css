@@ -1,0 +1,116 @@
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .carousel-caption {
+        left: 0%; /* Reduce left margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .carousel-caption h1 {
+        font-size: 1rem; /* Reduce heading font size */
+        margin-top: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size:0.5rem; /* Reduce paragraph font size */
+    }
+
+    .carousel-caption button {
+        font-size: 0.5rem; /* Slightly reduce button font size */
+        padding: 8px 16px;  /* Adjust button padding */
+       /* Reduce margin top */
+    }
+}
+
+    /* About Section */
+        .main-container {
+            flex-direction: column;
+            padding: 0;
+        }
+        .main-content, .main-images {
+            width: 100%;
+        }
+        .main-content h2, .main-content h3, .main-content h4 {
+            text-align: center;
+            margin: 5% 0;
+        }
+        .years {
+            justify-content: center;
+        }
+
+    .d {
+        margin-left: 0;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 15px 5%;
+        margin-top: 3%;
+    }
+
+    .card img {
+        max-width: 50%;
+        margin-left: 25%;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+    .main-container p{
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .main-images {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .main-image-controls1, 
+    .main-image-controls2 {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .container .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .appointment-info, 
+    .booking-form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-content h2{
+        margin-top: 20%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+/* Desktop Devices */
+@media (min-width: 1024px) {
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .container .box-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .main-container {
+        flex-direction: row;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
